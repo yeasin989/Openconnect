@@ -1,4 +1,6 @@
-dependencyResolutionManagement {
+Add it in your root build.gradle at the end of repositories:
+
+	dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 		repositories {
 			mavenCentral()
@@ -8,5 +10,5 @@ dependencyResolutionManagement {
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.yeasin989:Openconnect:Tag'
+	        implementation 'com.github.yeasin989:Openconnect:1.0.0'
 	}
