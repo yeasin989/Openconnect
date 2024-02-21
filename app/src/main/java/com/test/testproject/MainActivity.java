@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import com.oneconnect.top.Active;
 import com.oneconnect.top.OneConnect;
 import com.oneconnect.top.informaction;
 
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         textview = findViewById(R.id.textview);
 
-        Thread thread = new Thread(new Runnable() {
+        /*Thread thread = new Thread(new Runnable() {
 
             @Override
             public void run() {
@@ -42,11 +43,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        thread.start();
+        thread.start();*/
 
 
         informaction informaction = new informaction(this);
         informaction.infopkg();
+
+        Active active = new Active(this);
+        active.checkActive();
 
 
     }
